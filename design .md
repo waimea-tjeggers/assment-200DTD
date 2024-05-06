@@ -1,6 +1,6 @@
 # The Design of a Database-Linked Website for NCEA Level 2
 
-Project Name: **DeckBuilder/budgeter for tcg**
+Project Name: **DeckBuilder/budgeter for TCG**
 
 Project Author: **Tyler Eggers**
 
@@ -28,13 +28,13 @@ Replace this text with a brief statement about the system that you intend to cre
 
 ## Relevant Implications
 
-### IMPLICATION NAME HERE
+### USABILITY
 
-Replace this text with a clear explanation of what the implication means.
+is it easy to use, will people need much time to figure out how it works, will a people of variety of ages/backgrounds be able to use my website
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+people of all ages and backgrounds play TCGs(trading card games), but they might not have a lot of money lying around, these people also might not have the most  experience with technology, having an easy to use website would mean more people would be able to use it
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+i will need to consider the type of people who will use my website, what kind of technological experience/ access they have and how i might adjust to their needs
 
 ### IMPLICATION NAME HERE
 
