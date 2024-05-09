@@ -30,28 +30,27 @@ Replace this text with a brief statement about the system that you intend to cre
 
 ### USABILITY
 
-is it easy to use, will people need much time to figure out how it works, will a people of variety of ages/backgrounds be able to use my website
+is it easy to use, will people need much time to figure out how it works, will a people of variety of ages/backgrounds be able to use my website.
 
-people of all ages and backgrounds play TCGs(trading card games), but they might not have a lot of money lying around, these people also might not have the most  experience with technology, having an easy to use website would mean more people would be able to use it
+people of all ages and backgrounds play TCGs(trading card games), but they might not have a lot of money lying around, these people also might not have the most  experience with technology, having an easy to use website would mean more people would be able to use it.
 
-i will need to consider the type of people who will use my website, what kind of technological experience/ access they have and how i might adjust to their needs
+i will need to consider the type of people who will use my website, what kind of technological experience/ access they have and how i might adjust to their needs,I will need to make sure to apply nielson's usability heuristics to the best of my ability like match between the system and real world, user control and freedom, error prevention and consistency and standards.
 
-### IMPLICATION NAME HERE
+### END USER IMPLICATION
 
-Replace this text with a clear explanation of what the implication means.
+who are the end users and what of their needs do I need to meet whether be what they can use, education level, any disabilities and any particular interests.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+people of any age and ability can play TCGs, this is why i need to make sure to consider every type of person who will be using this website, what they might want from me, what issues they might have and what technology they can use. 
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
+I may need to consider who will use it and what kind of education, technological skills and what devices they have, this could include using very basic words and commands, making the system simpler to use and everything comes with instructions, modifying so it can work on phones and making sure the intended audience like it  .
 
-### IMPLICATION NAME HERE
+### LEGAL IMPLICATIONS
 
-Replace this text with a clear explanation of what the implication means.
+what laws apply to the website i'm creating, what laws might I break or need to pay attention to, how should I avoid copy right.
 
-Replace this text with an explanation of why the implication is relevant to this particular project.
+as i'm using assets that might not belong to me i need to properly credit the proper authors, I also need to think about what data im acquiring and how I need to protect it.
 
-Replace this text with an explanation of what you will need to consider moving forward and how the project will be impacted by this implication.
-
+I will need to take into consideration the copy right laws of new zealand and the privacy and data protection act, i will also need to look into an other laws that might apply.
 
 -------------------------------------------------
 
