@@ -1,9 +1,11 @@
-# assment-200DTD
-this is demo level 2 NCEA assment 
+# assessment-200DTD
+this is demo level 2 NCEA assessment 
 
-## System Design & Testing
-all of the initial designs for the system can be found [here](design.md)
+## Documentation
 
-testing of features and further desing can be found [here](testing.md)
+The following documents support this project:
+
+- [Design & Review](Design.md)
+- [Development & Testing](Development.md)
 
 
