@@ -49,4 +49,37 @@ as i'm using assets that might not belong to me i need to properly credit the pr
 
 I will need to take into consideration the copy right laws of new zealand and the privacy and data protection act, i will also need to look into an other laws that might apply.
 
+### FUNCTIONALITY IMPLICATIONS
+
+Does everything work properly, are there any majors bugs/ glitches that could break the website
+
+functionality is important to any and all websites because you cant nto have a working website
+
+I will need to make sure that I double check everything, testing everything for bugs, i will also need my end user to do some double checking for me because they may think of something i haven't
+
+### INTELLECTUAL PROPERTY IMPLICATIONS
+
+what will require permission and what is free use, who will i need to credit and what for 
+
+IP is important because i am cannot claim everything my website uses and i will need to give proper credit where needed
+
+i will need to keep track of what i use and who it belongs to, i will also need to be careful to credit them properly
 -------------------------------------------------
+
+## UX principles
+
+### USER CONTROL AND FREEDOM
+this is important because i need to allow my users some control, so they can undo/ back out of actions
+
+i will need to make sure i always have ways for users to undo/ redo/ cancel actions or go back pages so they are never trapped
+
+### MATCH BETWEEN SYSTEMS AND REAL WORLD
+this is important because a lot of people build decks in certain styles in real life, i should think of all the ways that people sort things out and how they do things
+
+i will need to make sure i allow the users to sort out the cards in different styles just like they do in real life and make sure it feels like how it does in real life
+
+### CONSISTENCY AND STANDARDS
+i don't want my website to be hard to use or navigate so keeping it consistent with similar style layouts to other websites would make it easier to use
+
+i might need to compare to other websites to make sure it doesn't feel really different and make it harder to use for my end user
+
