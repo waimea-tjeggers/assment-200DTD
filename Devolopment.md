@@ -18,11 +18,11 @@ today i started a draft for mky database
 ![Alt text](image.png)
 
 a basic draft for my database layout, not completed
-### DATE HERE
+### MAY 21ST
 
-Replace this test with what you are working on
+today I did my ui draft
 
-Replace this text with brief notes describing what you worked on, any decisions you made, any changes to designs, etc. Add screenshots / links to other media to illustrate your notes where necessary.
+![Ui-draft](images/Ui-draft.png)
 
 ### DATE HERE
 
