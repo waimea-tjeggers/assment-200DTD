@@ -8,7 +8,7 @@ echo '<h1>Main Page</h1>';
 $db = connectToDB();
 
 // query to attempt to get deck data
-$query 'SELECT * FROM decks ORDER BY name ASC'
+$query = 'SELECT * FROM decks ORDER BY name ASC ';
 
 // Attempt to run the query
 try {
@@ -24,11 +24,32 @@ catch (PDOException $e) {
 // See what we got back
 consoleLog($decks);
 
+foreach($decks as $deck) {
+    echo '<a href="deck-view.php?code='. $deck['id'] '">';
+    echo $deck['name'];
+    echo '</a>'
+
+    echo'<a href="toggle-done.php?id=' . $deck['id'] . '">';
+    if ($deck['completed']){
+        echo 'done';
+    }
+
+    else {
+        echo 'not done';
+    }
+    echo '</a>';
+
+    echo '<a href="delete-deck.php?id=' . $deck['id'] . '">';
+    echo 'delete deck?';
+    echo '</a>';
+
+} 
+
 echo '<div id = "Add Deck">
         <a href ="form-deck">
             add deck
         </a>
-    </div>'
+    </div>';
 
 
 
