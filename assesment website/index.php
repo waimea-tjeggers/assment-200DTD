@@ -25,9 +25,9 @@ catch (PDOException $e) {
 consoleLog($decks);
 
 foreach($decks as $deck) {
-    echo '<a href="deck-view.php?code='. $deck['id'] '">';
+    echo '<a href="deck-view.php?code='. $deck['id'] . '">';
     echo $deck['name'];
-    echo '</a>'
+    echo '</a>';
 
     echo'<a href="toggle-done.php?id=' . $deck['id'] . '">';
     if ($deck['completed']){
