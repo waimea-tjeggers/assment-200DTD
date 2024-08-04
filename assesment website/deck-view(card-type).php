@@ -6,23 +6,24 @@ $deckid = $_GET['id'] ?? '';
 
 $db = connectToDB();
 
-$query = 'SELECT * FROM deck WHERE id = ?';
+$query = 'SELECT * FROM decks WHERE id = ?';
 
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$companyCode]);
-    $company = $stmt->fetch(); 
+    $stmt->execute([$deckid]);
+    $decks = $stmt->fetch(); 
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB List Fetch', ERROR);
-    die('There was an error getting company data from the database');
+    die('There was an error getting deck data from the database');
 }
 
-consoleLog($deck);
+consoleLog($decks);
 
-if ($deck == false) die('Unknown deck: ' . $deckid);
+if ($decks == false) die('Unknown deck: ' . $deckid);
 
 echo '<h2>' . $deck['name'] . '</h2>';
+
 
 
 

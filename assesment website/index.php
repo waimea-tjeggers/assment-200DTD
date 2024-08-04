@@ -8,13 +8,13 @@ echo '<h1>Main Page</h1>';
 $db = connectToDB();
 
 // query to attempt to get deck data
-$query = 'SELECT * FROM decks ORDER BY name ASC ';
+$query = 'SELECT * FROM decks ';
 
 // Attempt to run the query
 try {
     $stmt = $db->prepare($query);
     $stmt->execute();
-    $todos = $stmt->fetchAll();
+    $decks = $stmt->fetchAll();
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB List Fetch', ERROR);
@@ -25,8 +25,9 @@ catch (PDOException $e) {
 consoleLog($decks);
 
 foreach($decks as $deck) {
-    echo '<a href="deck-view.php?code='. $deck['id'] . '">';
-    echo $deck['name'];
+    echo '<li>';
+    echo '<a href="deck-view(card-type).php?code='. $deck['id'] . '">';
+    echo $deck['name'] . 'card type view';
     echo '</a>';
 
     echo'<a href="toggle-done.php?id=' . $deck['id'] . '">';
@@ -43,6 +44,7 @@ foreach($decks as $deck) {
     echo 'delete deck?';
     echo '</a>';
 
+    echo '</li>';
 } 
 
 echo '<div id = "Add Deck">
