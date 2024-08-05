@@ -4,12 +4,12 @@ include 'partials/top.php';
 
 $db = connectToDB();
 
-$query = 'SELECT * FROM decks ORDER BY name ASC'
+$query = 'SELECT * FROM decks ORDER BY name ASC';
 
 try {
     $stmt = $db->prepare($query);
     $stmt->execute();
-    $companies = $stmt->fetchAll();
+    $decks = $stmt->fetchAll();
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB company Fetch', ERROR);

@@ -24,11 +24,22 @@ catch (PDOException $e) {
 // See what we got back
 consoleLog($decks);
 
+echo '<ul id= "deck list">';
+
 foreach($decks as $deck) {
     echo '<li>';
-    echo '<a href="deck-view(card-type).php?code='. $deck['id'] . '">';
-    echo $deck['name'] . 'card type view';
+    echo '<a href="deck-view_card-type.php?id='. $deck['id'] . '">';
+    echo $deck['name'] . '_card type view';
     echo '</a>';
+
+    echo '<br>';
+
+    echo '<li>';
+    echo '<a href="deck-view_cmc.php?id='. $deck['id'] . '">';
+    echo $deck['name'] . '_converted mana cost view';
+    echo '</a>';
+
+    echo '<br>';
 
     echo'<a href="toggle-done.php?id=' . $deck['id'] . '">';
     if ($deck['completed']){
@@ -40,6 +51,8 @@ foreach($decks as $deck) {
     }
     echo '</a>';
 
+    echo '<br>';
+
     echo '<a href="delete-deck.php?id=' . $deck['id'] . '">';
     echo 'delete deck?';
     echo '</a>';
@@ -47,8 +60,9 @@ foreach($decks as $deck) {
     echo '</li>';
 } 
 
+echo '</ul>';
 echo '<div id = "Add Deck">
-        <a href ="form-deck">
+        <a href ="form-deck.php">
             add deck
         </a>
     </div>';
