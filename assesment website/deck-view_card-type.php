@@ -27,7 +27,8 @@ echo '<h2>' . $decks['name'] . '</h2>';
 //----------------------------------------------------------------------------------------
 
 $query = 'SELECT cards.name, 
-                 cards.price
+                 cards.price,
+                 cards.type
             FROM cards
             JOIN contains ON contains.card_id=cards.id
             JOIN decks ON contains.deck_id=decks.id
@@ -62,7 +63,11 @@ foreach($cards as $card) {
 
 echo '</ul>';
 
-echo '<div id = "Add Card">
+echo '<a href="deck-view_cmc.php?id='. $decks['id'] . '">';
+echo $decks['name'] . '_converted mana cost view';
+echo '</a>';
+
+echo '<div id = "Add">
         <a href ="connect-card.php">
             add card
         </a>

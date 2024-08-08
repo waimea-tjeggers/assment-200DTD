@@ -61,7 +61,7 @@ foreach($decks as $deck) {
 } 
 
 echo '</ul>';
-echo '<div id = "Add Deck">
+echo '<div id = "Add">
         <a href ="form-deck.php">
             add deck
         </a>

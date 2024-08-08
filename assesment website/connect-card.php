@@ -18,8 +18,31 @@ catch (PDOException $e) {
 
 consoleLog($cards);
 
-foreach($cards as $card){
-    echo $card['name'];
-}
+echo '<h2> Add Card </h2>';
 
-include 'partials/bottom.php'; ?>
+echo '<h3> Add Brand New Card';
+echo '<div id = "Add">
+        <a href ="form-card.php">
+            add new card
+        </a>
+    </div>';
+
+?>
+
+<h3> Add Pre-existing Card </h3>
+
+<label>Choose Card</label>
+<select name = 'cards.name' required>
+    <?php
+    foreach($cards as $card){
+        echo '<option>';
+        echo $card['name'];
+        echo '</option>';
+    }
+    ?>
+    </select>
+
+    <br>
+    
+    <input type="submit" value="Add">
+<?php include 'partials/bottom.php'; ?>

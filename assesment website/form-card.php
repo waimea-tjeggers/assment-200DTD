@@ -2,36 +2,24 @@
 require '_functions.php';
 include 'partials/top.php';
 
-// Connect to the database
-$db = connectToDB();
 
-$query = 'SELECT * FROM cards ORDER BY card-name ASC'
-
-try {
-    $stmt = $db->prepare($query);
-    $stmt->execute();
-    $companies = $stmt->fetchAll();
-}
-catch (PDOException $e) {
-    consoleLog($e->getMessage(), 'DB company Fetch', ERROR);
-    die('There was an error adding data to the database');
-}
-
-// See what we got back
-consoleLog($cards);
 
 ?>
 <h2> Add Card</h2>
 
 <form method = "post" action = "add-card.php" enctype="multipart/form-data">
     <label>Card Name</label>
-    <input name = "card-name" type = "text" required>
+    <input name = "name" type = "text" required>
+
+    <br>
 
     <label>Commander?</label>
     <input name="commander" type="checkbox" required>
 
+    <br>
+
     <label>Card Type</label>
-    <select name ="card-type" required>
+    <select name ="type" required>
     <option> land </option>
     <option> creature </option>
     <option> enchantment </option>
@@ -42,24 +30,37 @@ consoleLog($cards);
     <option> artifact creature </option>
     </select>
 
+    <br>
+
     <label>Legendary</label>
     <input name="legendary" type="checkbox" required>
 
+    <br>
 
     <label>Mana Cost</label>
-    <input name ="mana-cost" type ="text" placeholder = "e.g. Three G G B" required>
+    <input name ="mana_cost" type ="text" placeholder = "e.g. Three G G B" required>
+
+    <br>
 
     <label>Converted Mana Cost</label>
     <input name ="cmc" type ="int" placeholder = "e.g. 6" required>
 
+    <br>
+
     <label>Card image</label>
     <input type="file" name="image" accept="image/*" required>
 
+    <br>
+
     <label>Image type</label>
-    <input name ="image-type" input ="text" required>
+    <input name ="image_type" input ="text" required>
+
+    <br>
 
     <label>Card Price</label>
     <input name ="price" input ="int" required>
+    
+    <br>
 
     <input type="submit" value="Add">
 

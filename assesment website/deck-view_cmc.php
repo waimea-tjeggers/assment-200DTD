@@ -55,12 +55,27 @@ foreach($cards as $card) {
 
     echo $card['name'];
 
-    echo $card['price'];
+    echo '<br>';
 
-    echo $card['cmc'];
+    echo 'price ' . $card['price'];
+
+    echo '<br>';
+
+    echo 'cmc ' . $card['cmc'];
 
     echo '</li>';
 }
 
 echo '</ul>';
+
+echo '<a href="deck-view_card-type.php?id='. $decks['id'] . '">';
+echo $decks['name'] . '_card type view';
+echo '</a>';
+
+echo '<div id = "Add">
+        <a href ="connect-card.php">
+            add card
+        </a>
+    </div>';
+
 include 'partials/bottom.php'; ?>

@@ -21,9 +21,9 @@ if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file
 //----------------------------------------------------------------------------
 // Get other data from form via the $_POST super-global.
 
-$card_name=$_POST['card-name']
+$card_name=$_POST['name']
 $commander=$_POST['commander']
-$card_type=$_POST['card-type']
+$card_type=$_POST['type']
 $legendary=$_POST['legendary']
 $mana_cost=$_POST['mana-cost']
 $cmc=$_POST['cmc']
@@ -33,7 +33,7 @@ $price=$_POST['price']
 
 $db = connectToDB();
 
-$query = 'INSERT INTO cards (card-name,commander,card-type,legendary,mana-cost,cmc,image-data,price) VALUES (?,?,?,?,?,?,?,?,?)';
+$query = 'INSERT INTO cards (name,commander,type,legendary,mana_cost,cmc,image_data,price) VALUES (?,?,?,?,?,?,?,?,?)';
 
 try {
     $stmt = $db->prepare($query);
