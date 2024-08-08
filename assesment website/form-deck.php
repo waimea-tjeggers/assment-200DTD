@@ -28,6 +28,9 @@ consoleLog($decks);
     <label> Deck Name </label>
     <input name = 'name' type = text required>
 
+    <label> Budget? </label>
+    <input name = 'budget' type = 'int' required>
+
     <input type="submit" value="Add">
 
 <?php include 'partials/bottom.php'; ?>
