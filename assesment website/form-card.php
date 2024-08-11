@@ -14,7 +14,7 @@ include 'partials/top.php';
     <br>
 
     <label>Commander?</label>
-    <input name="commander" type="checkbox" required>
+    <input name="commander" type="checkbox" >
 
     <br>
 
@@ -33,7 +33,7 @@ include 'partials/top.php';
     <br>
 
     <label>Legendary</label>
-    <input name="legendary" type="checkbox" required>
+    <input name="legendary" type="checkbox" >
 
     <br>
 
@@ -48,7 +48,7 @@ include 'partials/top.php';
     <br>
 
     <label>Card image</label>
-    <input type="file" name="image" accept="image/*" required>
+    <input type="file" name="image_data" accept="image/*" required>
 
     <br>
 

@@ -22,9 +22,9 @@ consoleLog($decks);
 
 
 ?>
-<h2> Add Card</h2>
+<h2> Add Deck</h2>
 
-<form method = "post" action = "deck.php">
+<form method = "post" action = "add_deck.php">
     <label> Deck Name </label>
     <input name = 'name' type = text required>
 

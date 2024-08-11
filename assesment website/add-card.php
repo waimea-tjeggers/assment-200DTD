@@ -3,7 +3,6 @@ require '_functions.php';
 include 'partials/top.php';
 
 echo "<h1> adding cards to the database </h1>";
-consoleLog($_POST, "POST Data");
 
 consoleLog($_POST, 'POST');
 consoleLog($_FILES, 'FILES');
@@ -21,15 +20,15 @@ if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file
 //----------------------------------------------------------------------------
 // Get other data from form via the $_POST super-global.
 
-$card_name=$_POST['name']
-$commander=$_POST['commander']
-$card_type=$_POST['type']
-$legendary=$_POST['legendary']
-$mana_cost=$_POST['mana-cost']
-$cmc=$_POST['cmc']
-$image_data=$_POST['image-data']
-$image_type=$_POST['image-type']
-$price=$_POST['price']
+$name=$_POST['name'];
+$commander=$_POST['commander'];
+$type=$_POST['type'];
+$legendary=$_POST['legendary'];
+$mana_cost=$_POST['mana_cost'];
+$cmc=$_POST['cmc'];
+$imag_data=$_POST['image_data'];
+$image_type=$_POST['image_type'];
+$price=$_POST['price'];
 
 $db = connectToDB();
 
@@ -37,7 +36,7 @@ $query = 'INSERT INTO cards (name,commander,type,legendary,mana_cost,cmc,image_d
 
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$code,$name,$website]);
+    $stmt->execute([$name,$commander,$type,$legendary,$mana_cost,$cmc,$image_data,$image_type,$price]);
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Company Add', ERROR);
