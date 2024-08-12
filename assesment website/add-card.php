@@ -21,22 +21,20 @@ if(empty($_POST) && empty($_FILES)) die ('There was a problem uploading the file
 // Get other data from form via the $_POST super-global.
 
 $name=$_POST['name'];
-$commander=$_POST['commander'];
+$commander=$_POST['commander'] ?? 0;
 $type=$_POST['type'];
-$legendary=$_POST['legendary'];
+$legendary=$_POST['legendary'] ?? 0;
 $mana_cost=$_POST['mana_cost'];
 $cmc=$_POST['cmc'];
-$imag_data=$_POST['image_data'];
-$image_type=$_POST['image_type'];
 $price=$_POST['price'];
 
 $db = connectToDB();
 
-$query = 'INSERT INTO cards (name,commander,type,legendary,mana_cost,cmc,image_data,price) VALUES (?,?,?,?,?,?,?,?,?)';
+$query = 'INSERT INTO cards (name,commander,type,legendary,mana_cost,cmc,image_data,image_type,price) VALUES (?,?,?,?,?,?,?,?,?)';
 
 try {
     $stmt = $db->prepare($query);
-    $stmt->execute([$name,$commander,$type,$legendary,$mana_cost,$cmc,$image_data,$image_type,$price]);
+    $stmt->execute([$name,$commander,$type,$legendary,$mana_cost,$cmc,$imageData,$imageType,$price]);
 }
 catch (PDOException $e) {
     consoleLog($e->getMessage(), 'DB Company Add', ERROR);

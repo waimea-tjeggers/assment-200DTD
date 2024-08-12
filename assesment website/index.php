@@ -24,9 +24,10 @@ catch (PDOException $e) {
 // See what we got back
 consoleLog($decks);
 
-echo '<ul id= "deck list">';
+echo '<ul id= "deck-list">';
 
 foreach($decks as $deck) {
+    echo '<section id="deck">';
     echo '<li>';
     echo '<a href="deck-view_card-type.php?id='. $deck['id'] . '">';
     echo $deck['name'] . '_card type view';
@@ -58,10 +59,11 @@ foreach($decks as $deck) {
     echo '</a>';
 
     echo '</li>';
+    echo '</section>';
 } 
 
 echo '</ul>';
-echo '<div id = "Add">
+echo '<div id ="add-button">
         <a href ="form-deck.php">
             add deck
         </a>

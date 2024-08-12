@@ -23,6 +23,7 @@ consoleLog($decks);
 if ($decks == false) die('Unknown deck: ' . $deckid);
 
 echo '<h2>' . $decks['name'] . '</h2>';
+echo 'budget is ' . $decks['budget'] .'$';
 
 //----------------------------------------------------------------------------------------
 
@@ -67,7 +68,7 @@ echo '<a href="deck-view_cmc.php?id='. $decks['id'] . '">';
 echo $decks['name'] . '_converted mana cost view';
 echo '</a>';
 
-echo '<div id = "Add">
+echo '<div id ="add-button">
         <a href ="connect-card.php">
             add card
         </a>

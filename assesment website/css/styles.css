@@ -47,3 +47,30 @@ nav a {
     color: white;
     text-decoration: none;
 }
+
+#add-button{
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+}
+
+#add-button a {
+    display: flex;
+    height: 4rem;
+    width: 4rem;
+    background-color: #369;
+    border-radius: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#deck{
+    display:block;
+    justify-content:center;
+    background-color:#a8041c;
+    border: 2px;
+    border-style: solid;
+    border-color:#f91a06;
+    padding: 1rem
+
+}
